@@ -2,6 +2,11 @@ output "jenkins_ip" {
   value = azurerm_public_ip.jenkins.ip_address
 }
 
+output "jenkins_centos_ip" {
+  value = azurerm_public_ip.cenkins.ip_address
+}
+
+
 output "web_ip" {
    value = [azurerm_network_interface.web.*.private_ip_address]
 }
